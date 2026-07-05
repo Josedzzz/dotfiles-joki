@@ -9,6 +9,7 @@ This setup includes configurations for the following tools:
 - Zsh: Minimal `.zshrc` with Homebrew PATH, Tab autocomplete, and colored directory highlighting.
 - Starship: Cross-shell prompt with a Nord color palette, Git branch/status, full directory path, and left-side padding.
 - Ghostty: Terminal emulator configuration with Cascadia Code font, proper window padding, and Nerd Font icon support.
+- Neovim: (`~/.config/nvim`) - My full Neovim configuration (plugins managed via Lazy, cache ignored).
 
 ## Installation
 
