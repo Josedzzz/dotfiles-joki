@@ -61,28 +61,6 @@ return {
           },
         },
       },
-      -- Moved texlab inside the servers table
-      texlab = {
-        settings = {
-          texlab = {
-            build = {
-              executable = "latexmk",
-              args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" },
-              onSave = true,
-            },
-            forwardSearch = {
-              executable = "open",
-              args = { "-a", "Skim", "%p" },
-            },
-            auxDirectory = ".",
-            bibtexFormatter = "texlab",
-            chktex = {
-              onOpenAndSave = true,
-              onEdit = false,
-            },
-          },
-        },
-      },
     },
   },
 }
