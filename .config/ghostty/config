@@ -1,3 +1,6 @@
-theme = catppuccin-mocha
-font-family = Courier New Bold Italic
-font-size = 16
+# Theme that matches NvChad's "ashes" (see themes/nvchad-ashes)
+theme = nvchad-ashes
+
+# NvChad recommends a Nerd Font that is NOT the "Mono" variant (Mono makes icons tiny)
+font-family = JetBrainsMono Nerd Font
+font-size = 17
