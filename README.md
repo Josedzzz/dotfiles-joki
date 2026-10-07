@@ -7,9 +7,9 @@ This repository contains my personal configuration files (dotfiles) for macOS. I
 This setup includes configurations for the following tools:
 
 - Zsh: Minimal `.zshrc` with Homebrew PATH, Tab autocomplete, and colored directory highlighting.
-- Starship: Cross-shell prompt with a Nord color palette, Git branch/status, full directory path, and left-side padding.
-- Ghostty: Terminal emulator configuration with Cascadia Code font, proper window padding, and Nerd Font icon support.
-- Neovim: (`~/.config/nvim`) - My full Neovim configuration (plugins managed via Lazy, cache ignored).
+- Starship: Cross-shell prompt with an Ashes color palette (matches Neovim and Ghostty), Git branch/status, full directory path, and left-side padding.
+- Ghostty: Terminal emulator configuration with JetBrainsMono Nerd Font and a custom `nvchad-ashes` theme (`~/.config/ghostty/themes/`) that uses the same colors as NvChad's ashes theme.
+- Neovim: (`~/.config/nvim`) - NvChad v2.5 config with LSP + formatting for TS/React, C/C++, Python, Go, and LaTeX (vimtex + Skim). After the first launch, run `:MasonInstallAll` to install the language servers and formatters.
 
 ## Installation
 
@@ -19,7 +19,7 @@ To restore these dotfiles on a new machine, follow the steps below.
 
 - Git
 - Homebrew (for installing Starship and Ghostty)
-- A Nerd Font (Cascadia Code is used in this setup)
+- A Nerd Font (JetBrainsMono Nerd Font is used in this setup)
 
 ### Steps
 
@@ -28,7 +28,7 @@ To restore these dotfiles on a new machine, follow the steps below.
 ```bash
 brew install starship
 brew install --cask ghostty
-brew install --cask font-cascadia-code
+brew install --cask font-jetbrains-mono-nerd-font
 ```
 
 2. Clone the bare repository into `~/.dotfiles`:
