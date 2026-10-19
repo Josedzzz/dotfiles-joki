@@ -35,6 +35,10 @@ bindkey '^[OB' down-line-or-beginning-search  # Down arrow (application mode)
 bindkey '^R' history-incremental-search-backward
 
 # 4. Aliases
+export CLICOLOR=1             # colored ls output
+alias ll='ls -lh'             # long list, human-readable sizes
+alias la='ls -lAh'            # same, plus hidden files
+
 # Alias for managing dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
